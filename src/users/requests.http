@@ -1,0 +1,53 @@
+### Create a new user
+
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "hemant07@gmail.com",
+    "password":"Gattoo@123"
+}
+
+
+### User signin
+
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "hemant97@gmail.com",
+    "password":"Gattoo@123"
+}
+
+### Get the currently signin user
+GET http://localhost:3000/auth/whoAmI
+
+### Signout
+POST http://localhost:3000/auth/signout
+
+
+### Find a user
+GET http://localhost:3000/auth/2
+
+
+### Find all users
+GET http://localhost:3000/auth?email=hemant34@gmail.com
+
+### Delete a user
+DELETE http://localhost:3000/auth/16529756
+
+
+### Update a user
+
+PATCH http://localhost:3000/auth/24652384
+content-type: application/json
+
+{
+    "email": "hemant9777@gmail.com"
+}
+
+### Set a color
+GET http://localhost:3000/auth/colors/blue
+
+### Get a color
+GET http://localhost:3000/auth/colors
